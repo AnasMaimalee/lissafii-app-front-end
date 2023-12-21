@@ -15,6 +15,7 @@
 <style>
     body{
         background: linear-gradient( #aab2bc, #fff);
+        max-width: 100%;
     }
 .whole-content, .bottom{
     margin:20px auto;
@@ -39,6 +40,20 @@
     margin-left: 10px;
     font-size: small;
     border-radius: 20px;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #043959;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu{
+    display: none;
+}
+.mobile-nav{
+    display: none;
 }
 .top-body{
     display: flex;
@@ -193,6 +208,7 @@
 .bottom-header-right > :first-child{
     color: white;
     background-color: #043959;
+    box-shadow: 0px 3px 3px 0px #fff;
 }
 
 .bottom-header-right > :last-child{
@@ -217,6 +233,9 @@
 .bottom-bottom{
     margin-top: 40px;
 }
+.bottom-content a{
+    text-decoration: none;
+}
 .bottom-bottom-content{
     margin-top: 40px;
 }
@@ -226,6 +245,75 @@ hr{
 .bottom-bottom-content > :nth-child(3){
     font-style: italic;
     font-weight: bold;
+}
+/* @media  */
+@media screen and (max-width: 750px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    background-color: lightblue;
+  }
+  .whole-content, .bottom{
+    padding: 15px;
+   margin: 5px auto; 
+   max-width: 100%;
+}
+.header-navs{
+    display: none;
+}
+.mobile-nav{
+    display: block;
+    /* margin-right: -10px; */
+}
+.top-body-img{
+    display: none;
+}
+.top-body-left> :first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: wheat;
+    font-weight: bolder;
+    text-align: center;
+    /* font-weight: lighter; */
+}
+.lissafi{
+    padding-left: 40px;
+}
+.top-body-left> :nth-child(3){
+    margin-left: 40px;
+}
+.main-body{
+    margin-top: 70px;
+    /* display: flex; */
+}
+.top-main-body-imges{
+    padding: 30px;
+}
+.main-body-link{
+    margin-top: 30px;
+}
+.testimonials{
+    margin-top: 50px;
+}
+.testimonial-body{
+    display: grid;
+}
+.bottom-body> :first-child{
+    display: none;
+}
+.bottom-header-right{
+    margin-top: 13px;
+    margin-left: 05px;
+}
+.bottom-header-right a{
+    font-size: small;
+}
+.bottom-content a{
+    text-decoration: none;
+}
 }
 </style>
 </head>
@@ -238,12 +326,27 @@ hr{
                     <img src="images/cal-logo.svg" alt="">
                 </div>
             </div>
+            
             <div class="header-navs">
                 <a href="#" class="top-header-nav">About</a>
                 <a href="#" class="top-header-nav">Solutions</a>
                 <a href="#" class="top-header-nav">Features</a>
                 <a href="#" class="top-header-nav">Pricing</a>
                 <a href="#" class="top-header-nav-last">Try Software <i class="bi bi-arror-right"></i></a>
+            </div>
+            <div class="mobile-nav">
+                <butto class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </butto>
+                <nav class="nav-menu">
+                    <a href="#" class="top-header-nav">About</a>
+                    <a href="#" class="top-header-nav">Solutions</a>
+                    <a href="#" class="top-header-nav">Features</a>
+                    <a href="#" class="top-header-nav">Pricing</a>
+                    <a href="#" class="top-header-nav-last">Try Software <i class="bi bi-arror-right"></i></a>
+                </nav>
             </div>
         </div>
         <!-- top  -->
@@ -417,5 +520,12 @@ hr{
             </div>
         </div>
     </div>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav-menu').classList.toggle('active');
+     });
+
+    </script>
 </body>
 </html>
