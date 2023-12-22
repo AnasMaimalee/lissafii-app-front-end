@@ -365,11 +365,11 @@ hr{
     }
     .mobile-main-body{
         margin-left: -15px;
-        /* margin-right: -5px; */
+        margin-right: -15px;
         margin-top: 20px;
         background-color: #fff;
         display: block;
-        width: 300px;
+        width: 100%;
         overflow-x: hidden;
         position: relative;
     }
@@ -389,8 +389,11 @@ hr{
         float: left;
         overflow: hidden;
         position: relative;
+        display: none;
     }
-
+    .top-main-body-imges:first-child{
+        display: block;
+    }
     .top-main-body-imges img{
         width: 100%;
         height: auto;
@@ -478,32 +481,7 @@ hr{
         <!-- main-body -->
             <!-- for the mobile phoen  -->
         <div class="mobile-main-body">
-            <div class="image-slider">
-                <div class="slides">
-                    <div class="top-main-body-imges">
-                        <img src="images/construction.svg" alt="" class="img-main-body">
-                        <figcaption class="fig-cap">Construction</figcaption>
-                    </div>
-                    <div class="top-main-body-imges">
-                        <img src="images/restaurant.svg" alt="" class="img-main-body">
-                        <figcaption  class="fig-cap">Restaurant</figcaption>
-                    </div><div class="top-main-body-imges">
-                        <img src="images/hotels.svg" alt="" class="img-main-body">
-                        <figcaption class="fig-cap">Hotels</figcaption>
-                    </div><div class="top-main-body-imges">
-                        <img src="images/laundry.svg" alt="" class="img-main-body">
-                        <figcaption class="fig-cap">Trader</figcaption>
-                    </div>
-                    <div class="top-main-body-imges">
-                        <img src="images/station.svg" alt="" class="img-main-body">
-                        <figcaption class="fig-cap">Filling Station</figcaption>
-                    </div>
-                </div>
-                <div class="button-wrapper">
-                    <button class="prev" onclick="moveSlide(-1)">Pre</button>
-                    <button class="prev" onclick="moveSlide(1)">Next</button>
-                </div>
-            </div>
+           
         </div>
             <!-- for the computer  -->
         <div class="main-body">
