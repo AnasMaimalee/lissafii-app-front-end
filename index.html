@@ -425,16 +425,42 @@ hr{
         border-radius: 40px;
     } 
     /* slider */
+    .mobile-main-body{
+        background-color: #043959;
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 15px;
+
+    }
     .slider-wrapper{
         display: flex;
         justify-content: space-between;
     }
     .prev, .next{
         border: none;
+        height: 30px;
         width: 20px;
         color: #043959;
         opacity: 0.7;
-        margin-top: -70px;
+        margin-top: -140px;
+    }
+    .mySlides{
+        display: flex;
+        width: 180px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+    .solution{
+        color: #fff;
+        margin: 15px;
+    }
+    .first-p{
+        padding-top: 10px;
+        font-size: x-large;
     }
 }
 </style>
@@ -486,8 +512,11 @@ hr{
         <!-- main-body -->
             <!-- for the mobile phoen  -->
         <div class="mobile-main-body">
+        <div class="solution">
+            <p class="first-p">Solutions</p>
+            <p>Regardless of what you do, we have something for you.</p>
+        </div>
            <div class="slides">
-            <img src="images/construction.svg" alt="" class="mySlides">
             <img src="images/restaurant.svg" alt="" class="mySlides">
             <img src="images/hotels.svg" alt="" class="mySlides">
             <img src="images/laundry.svg" alt="" class="mySlides">
