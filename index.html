@@ -221,7 +221,9 @@
     background-color: #043959;
     box-shadow: 0px 3px 3px 0px #fff;
 }
-
+.bottom-content-header-mobile{
+    display: none;
+}
 .bottom-header-right > :last-child{
     color: #043959;
     background-color: #fff;
@@ -395,13 +397,31 @@ hr{
         margin-right: -30px ;
 
     }
-    .bottom-header-left> :first-child{
-        font-size: medium;
+    .bottom-header-right{
+        display: none;
+    }
+    .bottom-content-header{
         font-weight: bolder;
     }
-    .bottom-header-right{
-        margin-right: -20px;
-        font-size: small;
+    .bottom-content-header-mobile{
+        margin-top: 20px;
+        display: block;
+    }
+    .bottom-content-header-mobile> :first-child{
+        color: white;
+        background-color: #043959;
+        box-shadow: 0px 3px 3px 0px #000;
+    }
+    .bottom-content-header-mobile> :last-child{
+        color: #043959;
+        background-color: #fff;
+        box-shadow: 0px 3px 3px 0px #000;
+    }
+    .bottom-content-header-mobile a{
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-left: 0px;
+        border-radius: 40px;
     }
 }
 </style>
@@ -453,7 +473,7 @@ hr{
         <!-- main-body -->
             <!-- for the mobile phoen  -->
         <div class="mobile-main-body">
-           tobe display soon
+           tobe displayed soon
         </div>
             <!-- for the computer  -->
         <div class="main-body">
@@ -560,6 +580,7 @@ hr{
                 <p>Get onboard today</p>
                 <p>Get limited 1 week free to try our features</p>
             </div>
+            
             <div class="bottom-header-right">
                 <a href="#">Learn More</a>
                 <a href="#">Request Demo <i class="bi bi-arror-right"></i> </a>
@@ -599,6 +620,11 @@ hr{
                     <img src="images/instagram.svg" alt="">
                 </div>
             </div>
+        </div>
+        <hr>
+        <div class="bottom-content-header-mobile">
+            <a href="">Learn More</a>
+            <a href="">Request Demo</a>
         </div>
         <div class="bottom-bottom">
             <div class="bottom-bottom-content">
